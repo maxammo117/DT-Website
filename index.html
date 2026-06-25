@@ -28,12 +28,20 @@
       <nav class="nav">
         <a href="#services">Services</a>
         <a href="#about">About</a>
+        <a href="#careers">Careers</a>
         <a href="#quote">Get a Quote</a>
         <a href="#contact">Contact</a>
         <a href="#quote" class="nav-cta">Request Quote</a>
       </nav>
     </div>
   </header>
+
+  <!-- ============ HIRING BANNER ============ -->
+  <a href="#careers" class="hiring-banner">
+    <span class="hiring-tag">Now Hiring</span>
+    <span class="hiring-text">CDL-A drivers wanted — join the Dickson Trucking fleet</span>
+    <span class="hiring-arrow">Apply now →</span>
+  </a>
 
   <!-- ============ HERO ============ -->
   <section class="hero">
@@ -92,7 +100,7 @@
         </article>
 
         <article class="service-card">
-          <img src="haultruck.jpg"Oversize load with escort" />
+          <img src="haultruck.jpg" alt="Oversize load with escort" />
           <div class="service-body">
             <h3>Oversize &amp; permitted</h3>
             <p>High, wide and heavy handled with the right permits, routing, and escorts where required.</p>
@@ -129,6 +137,84 @@
           <li>Transparent, all-in pricing</li>
         </ul>
       </div>
+    </div>
+  </section>
+
+  <!-- ============ CAREERS ============ -->
+  <section class="section careers" id="careers">
+    <div class="container">
+      <header class="section-head">
+        <p class="kicker">Join the crew</p>
+        <h2>We're hiring drivers</h2>
+        <p class="section-lead">
+          Dickson Trucking is growing. If you run hard, run safe, and take pride
+          in the load, we want to hear from you. Send your resume below.
+        </p>
+      </header>
+
+      <!-- IMPORTANT: replace the email in the action with the real inbox -->
+      <form class="form" action="https://formsubmit.co/REPLACE_WITH_YOUR_EMAIL" method="POST" enctype="multipart/form-data">
+        <input type="hidden" name="_subject" value="New job application — Dickson Trucking" />
+        <input type="hidden" name="_template" value="table" />
+        <input type="text" name="_honey" style="display:none" />
+
+        <div class="form-row">
+          <div class="field">
+            <label for="j-name">Full name</label>
+            <input id="j-name" type="text" name="Name" required />
+          </div>
+          <div class="field">
+            <label for="j-phone">Phone</label>
+            <input id="j-phone" type="tel" name="Phone" required />
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="field">
+            <label for="j-email">Email</label>
+            <input id="j-email" type="email" name="Email" required />
+          </div>
+          <div class="field">
+            <label for="j-cdl">CDL class</label>
+            <select id="j-cdl" name="CDL Class" required>
+              <option value="" disabled selected>Select one</option>
+              <option>CDL-A</option>
+              <option>CDL-B</option>
+              <option>No CDL yet</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="field">
+            <label for="j-exp">Years of experience</label>
+            <select id="j-exp" name="Experience" required>
+              <option value="" disabled selected>Select one</option>
+              <option>Less than 1 year</option>
+              <option>1–3 years</option>
+              <option>3–5 years</option>
+              <option>5+ years</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="j-endorse">Endorsements</label>
+            <input id="j-endorse" type="text" name="Endorsements" placeholder="Tanker, HazMat, etc. (optional)" />
+          </div>
+        </div>
+
+        <div class="field">
+          <label for="j-resume">Resume (PDF or Word)</label>
+          <input id="j-resume" type="file" name="Resume" accept=".pdf,.doc,.docx" class="file-input" required />
+        </div>
+
+        <div class="field">
+          <label for="j-note">Anything else?</label>
+          <textarea id="j-note" name="Notes" rows="4" placeholder="Tell us about your driving history, the equipment you've run, or when you can start…"></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-primary btn-block">Submit application</button>
+        <p class="form-note">We review every application and reach out to qualified drivers directly.</p>
+      </form>
     </div>
   </section>
 
@@ -273,6 +359,7 @@
       <nav class="footer-nav">
         <a href="#services">Services</a>
         <a href="#about">About</a>
+        <a href="#careers">Careers</a>
         <a href="#quote">Quote</a>
         <a href="#contact">Contact</a>
       </nav>

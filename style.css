@@ -184,6 +184,43 @@ h3 { font-size: 1.35rem; letter-spacing: 0.03em; }
 .nav-toggle { display: none; }
 .nav-toggle-label { display: none; }
 
+/* ---------- Hiring banner ---------- */
+.hiring-banner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0.6rem 1rem;
+  background: var(--amber);
+  color: var(--white);
+  padding: 0.75rem 1.5rem;
+  text-align: center;
+  font-family: "Oswald", sans-serif;
+  letter-spacing: 0.04em;
+  transition: background 0.2s var(--ease);
+}
+.hiring-banner:hover { background: var(--amber-dk); }
+.hiring-tag {
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  font-size: 0.8rem;
+  background: rgba(0,0,0,0.25);
+  padding: 0.25rem 0.7rem;
+  border-radius: var(--radius);
+}
+.hiring-text {
+  font-weight: 500;
+  font-size: 0.98rem;
+  text-transform: uppercase;
+}
+.hiring-arrow {
+  font-weight: 700;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
 /* ---------- Hero ---------- */
 .hero {
   position: relative;
@@ -256,8 +293,9 @@ h3 { font-size: 1.35rem; letter-spacing: 0.03em; }
 .section { padding: 5.5rem 0; }
 .services { background: var(--navy-800); }
 .about    { background: var(--navy-900); }
-.quote    { background: var(--navy-800); }
-.contact  { background: var(--navy-900); }
+.careers  { background: var(--navy-800); }
+.quote    { background: var(--navy-900); }
+.contact  { background: var(--navy-800); }
 
 .section-head { max-width: 640px; margin-bottom: 3rem; }
 .section-lead { color: var(--chrome-2); font-size: 1.1rem; margin-top: 0.8rem; }
@@ -364,6 +402,28 @@ h3 { font-size: 1.35rem; letter-spacing: 0.03em; }
   box-shadow: 0 0 0 3px rgba(216,31,38,0.18);
 }
 .field textarea { resize: vertical; }
+
+/* file input (resume upload) */
+.file-input {
+  cursor: pointer;
+  padding: 0.65rem 0.9rem;
+}
+.file-input::file-selector-button {
+  font-family: "Oswald", sans-serif;
+  font-weight: 600;
+  font-size: 0.82rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--white);
+  background: var(--amber);
+  border: none;
+  border-radius: var(--radius);
+  padding: 0.5rem 1rem;
+  margin-right: 0.9rem;
+  cursor: pointer;
+  transition: background 0.2s var(--ease);
+}
+.file-input::file-selector-button:hover { background: var(--amber-dk); }
 .form-note {
   text-align: center;
   font-size: 0.85rem;
@@ -485,6 +545,7 @@ h3 { font-size: 1.35rem; letter-spacing: 0.03em; }
   .form { padding: 1.5rem; }
   .hero { min-height: 80vh; }
   .footer-inner { flex-direction: column; align-items: flex-start; }
+  .hiring-text { font-size: 0.88rem; }
 }
 
 /* ---------- Accessibility ---------- */
